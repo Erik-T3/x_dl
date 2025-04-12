@@ -19,6 +19,12 @@ A Python script to download media (images and videos) from X (Twitter) using [ga
 pip install -r requirements.txt
 ```
 
+This script requires the following Python packages:
+
+- [`gallery_dl`](https://github.com/mikf/gallery-dl) – Media extractor (licensed under [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html))
+- [`requests`](https://pypi.org/project/requests/)
+- [`python-dotenv`](https://pypi.org/project/python-dotenv/)
+
 ## Usage
 
 Basic usage (fetches all media, resumes from checkpoint if available):
@@ -115,3 +121,6 @@ python x_image_dl.py username [options]
 - By default, files smaller than 128KB are skipped.
 - Command-line auth token takes precedence over .env file.
 - If `--limit` is used with `--date`, the script first fetches the last N posts and then filters them by date. 
+
+
+
