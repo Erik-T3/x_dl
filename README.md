@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 This script requires the following Python packages:
 
-- [`gallery_dl`](https://github.com/mikf/gallery-dl) – Media extractor (licensed under [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html))
+- [`gallery_dl`](https://github.com/mikf/gallery-dl) (licensed under [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html))
 - [`requests`](https://pypi.org/project/requests/)
 - [`python-dotenv`](https://pypi.org/project/python-dotenv/)
 
