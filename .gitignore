@@ -1,0 +1,50 @@
+# Environment variables
+.env
+
+# Checkpoint data
+.checkpoints/
+
+# Generated output
+downloads/
+
+# Reference code (if applicable)
+reference_code/
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.log
+*.token
+*.checkpoint
+*.json
+*.csv
+*.xlsx
+*.db
+*.sqlite
+*.sqlite3 
