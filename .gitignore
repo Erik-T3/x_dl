@@ -47,4 +47,7 @@ Thumbs.db
 *.xlsx
 *.db
 *.sqlite
-*.sqlite3 
+*.sqlite3
+
+# Aider specific
+.aider.* 
