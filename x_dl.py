@@ -340,7 +340,7 @@ def download_file(session, item, output_dir, index, total, allow_redownload=Fals
         print(f"\nError: {error_msg}")
         return "", False, error_msg
 
-def download_media(username, output_dir, start_date=None, auth_token=None, limit=0, redownload=False, min_size_kb=128):
+def download_media(username, output_dir, start_date=None, auth_token=None, limit=0, redownload=False, min_size_kb=0):
     """Download media from a specific X.com user into a user-specific subfolder, using checkpoints."""
     os.makedirs(output_dir, exist_ok=True)
     user_output_dir = os.path.join(output_dir, username)
@@ -493,7 +493,7 @@ def main():
     parser.add_argument("--timeline", "-t", default="media", choices=["media", "tweets", "with_replies"], help="Timeline type")
     parser.add_argument("--limit", "-l", type=int, default=0, help="Limit N most recent posts (0=all)")
     parser.add_argument("--redownload", action="store_true", help="Ignore checkpoint for fetching and attempt to redownload all files")
-    parser.add_argument("--min-size-kb", type=int, default=128, help="Minimum file size in KB to download (0 to disable size check)")
+    parser.add_argument("--min-size-kb", type=int, default=50, help="Minimum file size in KB to download (0 to disable size check)")
     args = parser.parse_args()
     try:
         if args.preview:

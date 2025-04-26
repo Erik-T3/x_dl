@@ -51,3 +51,8 @@ Thumbs.db
 
 # Aider specific
 .aider.* 
+
+# Shell specific
+*.sh
+*.bash
+*.zsh

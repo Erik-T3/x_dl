@@ -104,6 +104,7 @@ If you need more control:
 
 ```bash
 python x_image_dl.py username [options]
+```
 
 **Options:**
 - `username`: X username
@@ -114,13 +115,14 @@ python x_image_dl.py username [options]
 - `--timeline`, `-t`: Timeline type to fetch (choices: media, tweets, with_replies, default: media)
 - `--limit`, `-l`: Limit fetching to the N most recent posts. Default 0 fetches all.
 - `--redownload`: Ignore checkpoint when fetching metadata and attempt to download all files.
+- `--min-size-kb`: Minimum file size in KB to download (default: 50). Set to 0 to disable size check.
 
 ## Notes
 
 - The script uses [gallery_dl](https://github.com/mikf/gallery-dl) under the hood.
-- By default, files smaller than 128KB are skipped.
+- By default, files smaller than 50KB are skipped.
 - Command-line auth token takes precedence over .env file.
-- If `--limit` is used with `--date`, the script first fetches the last N posts and then filters them by date. 
+- If `--limit` is used with `--date`, the script first fetches the last N posts and then filters them by date.
 
 
 
